@@ -18,13 +18,14 @@ bluecar.addEventListener("animationiteration", function () {
 
 
 // mycar movement
+//right movement
 window.addEventListener("keydown", function (e) {
     if (e.keyCode == "39") {
         var mycarmove = parseInt(window.getComputedStyle(mycar).getPropertyValue("left"))
         if (mycarmove < 880) { mycar.style.left = (mycarmove + 100) + "px" }
         //  jumpsound.play()
     };
-
+//left movement
     if (e.keyCode == "37") {
         var mycarmove = parseInt(window.getComputedStyle(mycar).getPropertyValue("left"))
         if (mycarmove > 0) {
